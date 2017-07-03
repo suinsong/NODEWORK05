@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<!--  모바일 너비로 맞춰서 알아서 하셈 -->
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<title>Insert title here</title>
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src='/js/form.js'></script>
+
+</head>
+<body>
+	<header>
+
+		<h2>성적입력</h2>
+
+
+	</header>
+
+	<nav></nav>
+
+
+	<article id='input_form'>
+		<form action='/insert' method='post'>
+			<!--  
+			input type 에 쓸 수 있는 값
+			color, date, datetime-local, email, month, number,
+			range, search, tel, time, url, week
+		
+		
+		 -->
+
+
+			<p>
+				색깔<input type='color'>
+			</p>
+
+			<p>
+				학번<input type='text' name='strNum' placeholder='학번을 입력하세요'
+					id='strNum'>
+			</p>
+			
+			<p>
+				이름 <input type='text' name='strName' placeholder='이름을 입력하세요'
+					id='strName'>
+			</p>
+
+			<p>
+				비밀번호 <input type='password' name='strPasswd' id='strPasswd'>
+			</p>
+
+			<p>
+				국어<input type='text' name='intKor' placeholder='숫자만 기입' id='intKor'>
+			</p>
+			
+			<p>
+				영어<input type='text' name='intEng' placeholder='숫자만 기입' id='intEng'>
+			</p>
+			
+			<p>
+				수학<input type='text' name='intMath' placeholder='숫자만 기입'
+					id='intMath'>
+			</p>
+			
+			<p>
+				총점 <input type='text' name='intTotal' id='intTotal'>
+			</p>
+			
+			<p>
+				평균 <input type='text' name='intAvg' id='intAvg'>
+			</p>
+
+			<p>
+				<button type='button' id='saveBtn'>저장</button>
+			</p>
+			
+		</form>
+
+		<!-- 
+		<table>
+			<tr>
+				<td>학번</td>
+				<td><input type='text' name='strNum' id='strNum'></td>
+			</tr>
+
+			<tr>
+				<td>이름</td>
+				<td><input type='text' name='strName' id='strName'></td>
+			</tr>
+
+			<tr>
+				<td>국어</td>
+				<td><input type='text' name='intKor' id='intKor'></td>
+			</tr>
+
+
+			<tr>
+				<td>영어</td>
+				<td><input type='text' name='intEng' id='intEng'></td>
+			</tr>
+
+
+			<tr>
+				<td>수학</td>
+				<td><input type='text' name='intMath' id='intMath'></td>
+			</tr>
+
+
+			<tr>
+				<td>총합</td>
+				<td><input type='text' name='intTotal' id='intTotal'></td>
+			</tr>
+
+
+			<tr>
+				<td>평균</td>
+				<td><input type='text' name='intAvg' id='intAvg'></td>
+			</tr>
+
+
+			<tr>
+				<td colspan=2 align=center><button>입력</button></td>
+		</table>
+
+  -->
+
+	</article>
+
+
+</body>
+</html>
